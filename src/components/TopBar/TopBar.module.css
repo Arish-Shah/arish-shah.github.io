@@ -1,0 +1,58 @@
+.TopBar {
+  padding: 30px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand {
+  flex: 2;
+}
+
+.brand a {
+  font-size: 3.5em;
+  font-weight: bold;
+  border-radius: 100%;
+  display: inline-block;
+  color: var(--background);
+  padding: 10px 16px 22px 16px;
+  background-color: var(--text);
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.links {
+  flex: 3;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.links a {
+  color: var(--text);
+  text-decoration: underline;
+}
+
+.links a span {
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25rem;
+}
+
+@media (min-width: 600px) {
+  .container {
+    width: 850px;
+    margin: 0 auto;
+  }
+
+  .brand {
+    flex: 6;
+  }
+
+  .links {
+    flex: 2;
+  }
+}
