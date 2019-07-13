@@ -2,6 +2,7 @@ import React from 'react';
 import { Route } from 'react-router-dom';
 
 import TopBar from './components/TopBar/TopBar';
+import Home from './components/Home/Home';
 
 function App() {
   return (
