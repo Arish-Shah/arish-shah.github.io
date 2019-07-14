@@ -19,8 +19,10 @@ function TopBar() {
           <NavLink to="/">a</NavLink>
         </div>
         <div className={styles.links}>
-          <NavLink to="/skills">Skills</NavLink>
-          <NavLink to="/projects">Projects</NavLink>
+          <NavLink to="/contact">Contact</NavLink>
+          <a href="https://github.com/arizh" target="_blank" rel="noopener noreferrer">
+            GitHub
+          </a>
           <NavLink to="/" onClick={handleTheme}>
             <span role="img" aria-labelledby="Theme">
               {theme === 'dark' ? ' ☀️' : ' 🌙'}

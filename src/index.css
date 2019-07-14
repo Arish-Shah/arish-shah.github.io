@@ -1,10 +1,10 @@
+html {
+  --blue: #3C83DA;
+}
+
 html.dark {
   --text: #fff;
   --background: #202326;
-}
-
-html.dark ::selection {
-  background: tomato;
 }
 
 html.light {
