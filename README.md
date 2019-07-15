@@ -15,4 +15,4 @@ Checkout this repo, install dependencies, then start the gulp process with the f
 
 #### Demo
 
-https://arizh.surge.sh
+https://arish.surge.sh
