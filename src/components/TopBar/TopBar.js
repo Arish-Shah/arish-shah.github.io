@@ -26,11 +26,11 @@ function TopBar() {
           <a href={url} target="_blank" rel="noopener noreferrer">
             GitHub
           </a>
-          <NavLink to="#" onClick={handleTheme}>
+          <button onClick={handleTheme}>
             <span role="img" aria-labelledby="Theme">
               {theme === 'dark' ? ' ☀️' : ' 🌙'}
             </span>
-          </NavLink>
+          </button>
         </div>
       </div>
     </div>

@@ -18,7 +18,7 @@
   color: var(--background, #202326);
   padding: 11px 18px 25px 18px;
   background-color: var(--text, #fff);
-  font-family: 'Times New Roman', Times, serif;
+  font-family: 'TimesNewRoman','Times New Roman','Times', 'Baskerville', Georgia, serif;
 }
 
 .links {
@@ -33,10 +33,16 @@
   text-decoration: underline;
 }
 
+.links button {
+  outline: 0;
+  background: transparent;
+  border: none;
+  font-size: 1.25rem;
+}
+
 .links a span {
   text-decoration: none;
   display: inline-block;
-  font-size: 1.25rem;
 }
 
 @media (min-width: 880px) {
