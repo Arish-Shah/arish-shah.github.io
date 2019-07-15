@@ -5,7 +5,7 @@ function Skills() {
   const skills = [
     { type: 'Languages', lang: 'Java, C, C++, JavaScript(ES5 + ES6), Python, PHP, HTML, CSS, SASS' },
     { type: 'Front-End Frameworks', lang: 'React, Redux, Svelte' },
-    { type: 'Back-End', lang: 'Node.js, Express, PHP, MySQL, Firebase Realtime Database' },
+    { type: 'Back-End', lang: 'Node.js, Express, Firebase Realtime Database, PHP, MySQL' },
     { type: 'Technologies', lang: 'Git/GitHub, npm, JSON, Firebase, BootStrap' }
   ]
 
