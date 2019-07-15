@@ -23,7 +23,7 @@ function TopBar() {
           <a href="https://github.com/arizh" target="_blank" rel="noopener noreferrer">
             GitHub
           </a>
-          <NavLink to="/" onClick={handleTheme}>
+          <NavLink to="#" onClick={handleTheme}>
             <span role="img" aria-labelledby="Theme">
               {theme === 'dark' ? ' ☀️' : ' 🌙'}
             </span>

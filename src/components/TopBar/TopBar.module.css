@@ -42,7 +42,7 @@
 @media (min-width: 600px) {
   .container {
     padding: 35px 0;
-    width: 880px;
+    max-width: 880px;
     margin: 0 auto;
   }
 

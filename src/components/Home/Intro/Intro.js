@@ -5,7 +5,7 @@ function Intro() {
   const handleClick = () => {
     window.innerWidth < 600 ?
       window.scrollTo({ top: 800, left: 0, behavior: 'smooth' }) :
-      window.scrollTo({ top: 655, left: 0, behavior: 'smooth' });
+      window.scrollTo({ top: 650, left: 0, behavior: 'smooth' });
   }
 
   return (

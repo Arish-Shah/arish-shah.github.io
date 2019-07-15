@@ -1,0 +1,27 @@
+.container {
+  padding: 0 30px;
+}
+
+.button {
+  background-color: var(--blue);
+  border: 1px solid var(--blue);
+  color: #fff;
+  font-size: 1em;
+  font-weight: bold;
+  padding: 15px 40px;
+}
+
+.contact a {
+  text-decoration: underline;
+  color: var(--text);
+}
+
+.contact span {
+  display: block;
+}
+
+@media (min-width: 600px) {
+  .contact span {
+    display: initial;
+  }
+}
