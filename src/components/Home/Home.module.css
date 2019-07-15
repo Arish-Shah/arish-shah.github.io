@@ -6,7 +6,7 @@ hr {
   width: 50px;
   border: none;
   height: 2px;
-  background: var(--text);
+  background: var(--text, #fff);
   margin-left: 30px;
   margin-top: 100px;
   margin-bottom: 50px;

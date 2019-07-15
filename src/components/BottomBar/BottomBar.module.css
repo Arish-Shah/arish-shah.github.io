@@ -6,7 +6,7 @@
   padding: 40px 0;
   display: flex;
   flex-direction: row;
-  border-top: 1px solid var(--text);
+  border-top: 1px solid var(--text, #fff);
   justify-content: space-between;
   margin-top: -1px;
 }

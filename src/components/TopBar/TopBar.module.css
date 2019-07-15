@@ -15,9 +15,9 @@
   font-weight: bold;
   border-radius: 100%;
   display: inline-block;
-  color: var(--background);
+  color: var(--background, #202326);
   padding: 11px 18px 25px 18px;
-  background-color: var(--text);
+  background-color: var(--text, #fff);
   font-family: 'Times New Roman', Times, serif;
 }
 
@@ -29,7 +29,7 @@
 }
 
 .links a {
-  color: var(--text);
+  color: var(--text, #fff);
   text-decoration: underline;
 }
 
