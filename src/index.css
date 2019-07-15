@@ -5,11 +5,17 @@ html {
 html.dark {
   --text: #fff;
   --background: #202326;
+  --muted-text: #aaa;
+  --dark-background: #1c1f22;
+  --darkest-background: #191c1e;
 }
 
 html.light {
   --text: #2B2D3E;
   --background: #fff;
+  --muted-text: #444;
+  --dark-background: #f7f7f7;
+  --darkest-background: #eee;
 }
 
 html.light ::selection {
