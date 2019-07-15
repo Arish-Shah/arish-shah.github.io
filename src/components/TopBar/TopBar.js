@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { url, twitterUrl } from '../../URL';
 import { NavLink } from 'react-router-dom';
 import styles from './TopBar.module.css';
 
@@ -19,10 +20,10 @@ function TopBar() {
           <NavLink to="/">a</NavLink>
         </div>
         <div className={styles.links}>
-          <a href="https://twitter.com/arish_shah" target="_blank" rel="noopener noreferrer">
+          <a href={twitterUrl} target="_blank" rel="noopener noreferrer">
             Twitter
           </a>
-          <a href="https://github.com/arizh" target="_blank" rel="noopener noreferrer">
+          <a href={url} target="_blank" rel="noopener noreferrer">
             GitHub
           </a>
           <NavLink to="#" onClick={handleTheme}>

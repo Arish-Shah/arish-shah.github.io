@@ -3,7 +3,7 @@ import styles from './Project.module.css';
 
 function Project({ title, description, img, link }) {
   const handleClick = () => {
-    window.location.href = link;
+    window.open(link, '_blank');
   }
 
   return (

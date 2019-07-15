@@ -1,6 +1,6 @@
 .Project {
   padding: 15px;
-  margin: 15px 30px;
+  margin: 15px 25px;
   border-radius: 4px;
   cursor: pointer !important;
   background: var(--dark-background, #1c1f22);
