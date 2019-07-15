@@ -43,7 +43,7 @@
   color: var(--muted-text);
 }
 
-@media (min-width: 600px) {
+@media (min-width: 880px) {
   .Project {
     margin: 15px 0;
   }

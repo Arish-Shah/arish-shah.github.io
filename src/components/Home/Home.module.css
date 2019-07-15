@@ -12,7 +12,7 @@ hr {
   margin-bottom: 50px;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 880px) {
   .container {
     padding-top: 90px;
     max-width: 880px;
