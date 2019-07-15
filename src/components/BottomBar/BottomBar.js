@@ -3,7 +3,7 @@ import styles from './BottomBar.module.css';
 
 function BottomBar() {
   return (
-    <div className={styles.BottomBar}>
+    <footer className={styles.BottomBar}>
       <div className={styles.container}>
         <div className={styles.text}>
           2019, Made by Arish Rahil Shah
@@ -12,7 +12,7 @@ function BottomBar() {
           a
         </div>
       </div>
-    </div>
+    </footer>
   );
 }
 

@@ -9,7 +9,7 @@ import styles from './Home.module.css';
 
 function Home() {
   return (
-    <div className={styles.Home}>
+    <main className={styles.Home}>
       <div className={styles.container}>
         <Intro />
         <Projects />
@@ -18,7 +18,7 @@ function Home() {
         <hr align="left" />
         <Resume />
       </div>
-    </div>
+    </main>
   );
 }
 

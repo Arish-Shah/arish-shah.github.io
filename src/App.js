@@ -10,13 +10,13 @@ import NotFound from './components/404/NotFound';
 function App() {
   return (
     <div className="App">
-      <Route path="/" component={TopBar} />
+      <Route path="/(|contact)/" component={TopBar} />
       <Switch>
         <Route path="/" exact component={Home} />
         <Route path="/contact" exact component={Contact} />
         <Route component={NotFound} />
       </Switch>
-      <Route path="/" exact component={BottomBar} />
+      <Route path="/(|contact)/" component={BottomBar} />
     </div>
   );
 }

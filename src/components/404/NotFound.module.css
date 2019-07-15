@@ -1,5 +1,5 @@
 .NotFound {
-  height: 50vh;
+  height: 100vh;
   display: grid;
   justify-content: center;
   align-items: center;
@@ -11,6 +11,21 @@
 
 .container a {
   color: var(--blue);
+  display: inline-block;
+}
+
+.container a::after {
+  content: '';
+  display: block;
+  height: 2px;
+  background: var(--blue);
+  margin-top: 0px;
+  transition: width .3s ease-in-out;
+  width: 0;
+}
+
+.container a:hover::after {
+  width: 100%;
 }
 
 .container h1 {
