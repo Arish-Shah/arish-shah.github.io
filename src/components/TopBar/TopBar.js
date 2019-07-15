@@ -19,7 +19,9 @@ function TopBar() {
           <NavLink to="/">a</NavLink>
         </div>
         <div className={styles.links}>
-          <NavLink to="/contact">Contact</NavLink>
+          <a href="https://twitter.com/arish_shah" target="_blank" rel="noopener noreferrer">
+            Twitter
+          </a>
           <a href="https://github.com/arizh" target="_blank" rel="noopener noreferrer">
             GitHub
           </a>
