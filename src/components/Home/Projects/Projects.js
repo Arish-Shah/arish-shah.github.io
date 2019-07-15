@@ -14,9 +14,9 @@ function Projects() {
     { title: 'Calculator', desc: 'Calculator app built using React which performs all the basic operations', img: react, link: url + 'calculator' },
     { title: 'Enigma', desc: 'Encryption/Decryption software built as a part of Mini Project.', img: java, link: url + 'enigma' },
     { title: 'Remainder App', desc: 'Calendar app to keep an account of upcoming events', img: js, link: url + 'remainder-app' },
-    { title: 'OpenLeaks', desc: 'Website for posting sensitive information anonymously', img: php, link: 'OpenLeaks' },
-    { title: 'AgroFork', desc: 'Web application to fork traceability of farm produce by generating a QR Code', img: php, link: 'agrofork-alpha' },
-    { title: 'MJ Hack-Revolution 2019', desc: 'Website created to register candidates for Hackathon', img: html, link: 'mjHack2019' }
+    { title: 'OpenLeaks', desc: 'Website for posting sensitive information anonymously', img: php, link: url + 'OpenLeaks' },
+    { title: 'AgroFork', desc: 'Web application to fork traceability of farm produce by generating a QR Code', img: php, link: url + 'agrofork-alpha' },
+    { title: 'MJ Hack-Revolution 2019', desc: 'Website created to register candidates for Hackathon', img: html, link: url + 'mjHack2019' }
   ];
 
   return (
