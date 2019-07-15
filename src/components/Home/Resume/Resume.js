@@ -5,7 +5,7 @@ function Resume() {
   return (
     <div className={styles.Resume}>
       <div className={styles.container}>
-        <a href="/cv.pdf" target="_blank">
+        <a href="https://drive.google.com/file/d/1ctS3CdwCuKrlCJRfKKzqjYlFfrzocsOP/view?usp=sharing" target="_blank" rel="noopener noreferrer">
           <button className={styles.button}>Resume.pdf</button></a>
         <div className={styles.contact}>
           <h2>Want to get in touch? </h2>

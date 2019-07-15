@@ -13,8 +13,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "npm run build && mv build/index.html build/200.html  && cd build/ && surge --domain https://arish.surge.sh"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -31,8 +30,5 @@
       "last 1 safari version"
     ]
   },
-  "devDependencies": {
-    "gh-pages": "^2.0.1"
-  },
-  "homepage": "http://arizh.github.io/portfolio"
+  "devDependencies": {}
 }
