@@ -15,4 +15,4 @@ Checkout this repo, install dependencies, then start the gulp process with the f
 
 #### Demo
 
-https://modest-euclid-b49979.netlify.com/
+https://arish.netlify.com/
