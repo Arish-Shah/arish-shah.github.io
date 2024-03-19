@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="title" content="{{ title }}" />
+    <meta name="description" content="{{ description }}" />
+    <link href="./output.css" rel="stylesheet" />
+    <title>{{ title }}</title>
+  </head>
+  <body class="bg-zinc-50 text-zinc-950 dark:bg-zinc-950 dark:text-zinc-50">
+    <slot></slot>
+    <component name="footer" text="{{ title }}"></component>
+  </body>
+</html>

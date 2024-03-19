@@ -1,0 +1,27 @@
+{
+  "name": "arish-shah.github.io",
+  "type": "module",
+  "scripts": {
+    "prebuild": "rm -rf docs",
+    "build-html": "tsx ./src/index.ts",
+    "build-css": "npx tailwindcss -i ./src/input.css -o ./docs/output.css --minify",
+    "build": "npm run build-html && npm run build-css",
+    "prepare": "husky",
+    "prettier": "prettier . --write",
+    "preview": "python3 -m http.server --directory docs"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "latest",
+    "@types/html-minifier-terser": "latest",
+    "@types/node": "latest",
+    "cheerio": "latest",
+    "fs-extra": "latest",
+    "html-minifier-terser": "latest",
+    "husky": "latest",
+    "prettier": "latest",
+    "prettier-plugin-tailwindcss": "latest",
+    "tailwindcss": "latest",
+    "tsx": "latest",
+    "typescript": "latest"
+  }
+}
