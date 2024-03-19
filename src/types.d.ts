@@ -4,5 +4,7 @@ export type Page = {
 };
 
 export type PageWithData = Page & {
-  data: Record<string, string>;
+  data: {
+    [key: string]: any;
+  };
 };

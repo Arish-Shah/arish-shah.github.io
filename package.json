@@ -16,12 +16,16 @@
     "@types/node": "latest",
     "cheerio": "latest",
     "fs-extra": "latest",
+    "gray-matter": "latest",
     "html-minifier-terser": "latest",
     "husky": "latest",
     "prettier": "latest",
     "prettier-plugin-tailwindcss": "latest",
+    "remark-html": "latest",
+    "remark-parse": "latest",
     "tailwindcss": "latest",
     "tsx": "latest",
-    "typescript": "latest"
+    "typescript": "latest",
+    "unified": "latest"
   }
 }

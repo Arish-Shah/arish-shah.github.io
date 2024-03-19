@@ -1,4 +1,4 @@
-import { fillComponents, fillData, fillLayout } from "./build/fill";
+import { generateBlogPage, generateHtmlPage } from "./build/generate";
 import { readDir } from "./build/read";
 import { write } from "./build/write";
 
@@ -6,17 +6,25 @@ async function main() {
   const layouts = await readDir("layouts", true);
   const components = await readDir("components", true);
 
-  const pages = await Promise.all(
-    (await readDir("pages"))
-      .map((page) => fillLayout(page, layouts))
-      .map((page) => fillComponents(page, components))
-      .map(fillData)
-      .map(write)
-  );
+  const pages = await generateHtmlPage({
+    pages: await readDir("pages"),
+    layouts,
+    components,
+  });
 
-  const content = await readDir("content");
+  const blogLayout = layouts.find((l) => l.name === "blog")!;
+  const content = await generateHtmlPage({
+    pages: await Promise.all(
+      (await readDir("content")).map((page) =>
+        generateBlogPage(page, blogLayout)
+      )
+    ),
+    layouts,
+    components,
+  });
 
-  console.info("written files:\n" + pages.join("\n"));
+  await pages.forEach(write);
+  await content.forEach(write);
 }
 
 main().catch(console.error);

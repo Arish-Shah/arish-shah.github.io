@@ -24,5 +24,5 @@ export async function write(page: PageWithData) {
     removeComments: true,
   });
   await fs.outputFile(file, content);
-  return file;
+  console.log("written", file);
 }
