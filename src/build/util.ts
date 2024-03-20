@@ -1,6 +1,7 @@
 import remarkHtml from "remark-html";
 import remarkParse from "remark-parse";
 import { unified } from "unified";
+import { PageOrPageWithData } from "../types";
 import { fill } from "./fill";
 
 export async function markdownToHtml(markdown: string) {
@@ -19,4 +20,9 @@ export async function addLayout(
   let updatedContent = fill(layout, data);
   updatedContent = updatedContent.replace("<slot></slot>", content);
   return updatedContent;
+}
+
+export function extract(arr: PageOrPageWithData[], name: string) {
+  const index = arr.find((el) => el.name === name);
+  arr.filter;
 }

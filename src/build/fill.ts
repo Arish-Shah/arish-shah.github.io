@@ -1,5 +1,5 @@
 import * as cheerio from "cheerio";
-import { Page, PageWithData } from "../types";
+import { Page, PageWithData, PageWithOptionalData } from "../types";
 
 export function fill(content: string, data: Record<string, string>) {
   let updatedContent = content;
@@ -9,10 +9,10 @@ export function fill(content: string, data: Record<string, string>) {
   return updatedContent;
 }
 
-export function fillLayout(page: Page, layouts: Page[]) {
+export function fillLayout(page: PageWithOptionalData, layouts: Page[]) {
   const $ = cheerio.load(page.content, null, false);
   const layoutEl = $("layout");
-  const data = layoutEl.attr()!;
+  const data = Object.assign({}, page.data, layoutEl.attr());
 
   const layout = layouts.find((l) => l.name === data.name)!;
   const content = layout.content.replace("<slot></slot>", layoutEl.html()!);
@@ -21,7 +21,7 @@ export function fillLayout(page: Page, layouts: Page[]) {
     name: page.name,
     content,
     data,
-  } satisfies PageWithData;
+  } satisfies PageWithData as PageWithData;
 }
 
 export function fillComponents(page: PageWithData, components: Page[]) {
@@ -44,10 +44,10 @@ export function fillComponents(page: PageWithData, components: Page[]) {
     content = content.replace($.html(componentEl), innerHtml);
   }
 
-  return { ...page, content } satisfies PageWithData;
+  return { ...page, content } satisfies PageWithData as PageWithData;
 }
 
 export function fillData(page: PageWithData) {
   const content = fill(page.content, page.data);
-  return { ...page, content } satisfies PageWithData;
+  return { ...page, content } satisfies PageWithData as PageWithData;
 }

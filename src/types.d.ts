@@ -8,3 +8,7 @@ export type PageWithData = Page & {
     [key: string]: any;
   };
 };
+
+export type PageWithOptionalData = Page & Partial<Pick<PageWithData, "data">>;
+
+export type PageOrPageWithData = Page | PageWithData;
