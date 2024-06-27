@@ -1,5 +1,44 @@
 ---
+import type { FooterLinkType } from "../types.ts";
+import Icon from "../components/icon.astro";
 
+const links: FooterLinkType[] = [
+  {
+    name: "GitHub",
+    href: "https://github.com/arish-shah",
+  },
+  {
+    name: "LinkedIn",
+    href: "https://www.linkedin.com/in/arish-shah",
+  },
+  {
+    name: "X",
+    href: "https://x.com/arish_shah",
+  },
+  {
+    name: "Email",
+    href: "mailto:arish.r.shah@gmail.com",
+  },
+];
 ---
 
-<footer>page footer</footer>
+<footer class="border-t border-t-neutral-800 text-sm text-neutral-500">
+  <div class="container flex h-12 items-center justify-between">
+    <div>Reality is often (always) disappointing.</div>
+    <ul class="flex gap-4">
+      {
+        links.map((link) => (
+          <li>
+            <a
+              href={link.href}
+              title={link.name}
+              target={link.name !== "Email" ? "_blank" : undefined}
+            >
+              <Icon name={link.name} />
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+</footer>

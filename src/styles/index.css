@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #2e2e2e transparent;
+}
+
+.container {
+  @apply mx-auto max-w-[688px] px-6;
+}
+
+.prose h1,
+.prose h2 {
+  @apply font-medium;
+}
+
+.prose h2 {
+  @apply mt-14;
+}
+
+.prose em {
+  @apply font-serif;
+}
+
+.prose p {
+  @apply mt-7 leading-7;
+}
+
+.prose p a {
+  @apply underline decoration-neutral-700 underline-offset-2 transition ease-in-out hover:decoration-neutral-400;
+}
